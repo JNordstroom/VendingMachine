@@ -8,7 +8,7 @@ namespace assignment_automat
 {
     internal class Wallet
     {
-      //Gör en attribut som kan hålla mitt saldo. 
+      //Gör en attribut som kan hålla mitt saldo.  
         public static decimal Saldo { get; set; }
 
         public Wallet(decimal saldo)

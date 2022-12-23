@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace assignment_automat
 {
+
+    //Skapar mina metoder i mitt interface för att senare kunna implementera dem i klasserna
     internal interface IMachine
     {
         public void Desc();

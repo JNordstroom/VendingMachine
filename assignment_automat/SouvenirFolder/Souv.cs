@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.SouvenirFolder
 {
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Souv : Souvenir, IMachine
     {
         
@@ -147,7 +155,7 @@ namespace assignment_automat.SouvenirFolder
             }
         }
 
-        public static void MySouvList()
+        public static void MySouvList() // Lista över produkter för menyval
         {
             List<Souv> list = new List<Souv>();
             list.Add(new Souv(1, "Dalahäst", 50, "Traditionell svensk souvenir"));
@@ -159,6 +167,7 @@ namespace assignment_automat.SouvenirFolder
             }
 
         }
+        //Implementerar mina metoder från interfacet
         public void Buy()
         {
             Console.WriteLine("Du köpte en souvenir");

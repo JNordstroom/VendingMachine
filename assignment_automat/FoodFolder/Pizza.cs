@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.FoodFolder
 {
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Pizza : Food , IMachine
     {
 
@@ -146,7 +154,7 @@ namespace assignment_automat.FoodFolder
                 Console.ReadLine();
             }
         }
-        public void MyPizzaList()
+        public void MyPizzaList()  //Lista över mina pizza meny
         {
             List<Pizza> list = new List<Pizza>();  
             list.Add(new Pizza(1, "Vesuvio", 65, "Ost och skink pizza"));
@@ -158,7 +166,7 @@ namespace assignment_automat.FoodFolder
             }
 
         }
-
+        //IImplementerar metoder från interface 
         public void Desc()
         {
             

@@ -8,6 +8,8 @@ namespace assignment_automat
 {
     internal abstract class AMachine
     {
+
+        //Abstracta klassens properties
         public string Name { get; set; }
         public string Description { get; set; }
         public int Cost { get; set; }

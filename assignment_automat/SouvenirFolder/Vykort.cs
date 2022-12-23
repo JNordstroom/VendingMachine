@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.SouvenirFolder
 {
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Vykort : Souvenir, IMachine
     {
         public Vykort(int number, string name, int cost, string description) : base(number, name, cost, description)
@@ -146,7 +154,7 @@ namespace assignment_automat.SouvenirFolder
             }
         }
 
-        public static void MyVykortList()
+        public static void MyVykortList() // Gör en lista över produkter för menyval
         {
             List<Vykort> list = new List<Vykort>();
             list.Add(new Vykort(1, "Malmö vykort", 25, "Malmö stadium"));
@@ -158,6 +166,7 @@ namespace assignment_automat.SouvenirFolder
             }
 
         }
+        //Implementerar mina metoder från interfacet jag inheritade.
         public void Buy()
         {
             Console.WriteLine("Du köpte ett vykort");

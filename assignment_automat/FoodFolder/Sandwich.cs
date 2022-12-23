@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.FoodFolder
 {
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Sandwich : Food, IMachine
     {
         public Sandwich(int number, string name, int cost, string description) : base(number, name, cost, description)
@@ -145,7 +153,7 @@ namespace assignment_automat.FoodFolder
                 Console.ReadLine();
             }
         }
-        public void MySandwichList()
+        public void MySandwichList()  // lista för menyval 
         {
             List<Sandwich> list = new List<Sandwich>();
             list.Add(new Sandwich(1, "Bacon", 20, "Krämig kräm med baconbitar"));
@@ -157,6 +165,7 @@ namespace assignment_automat.FoodFolder
             }
 
         }
+        //Implementerar mina metoder från interfacet
         public void Buy()
         {
             Console.WriteLine("Köper den utsökta smörgåsen");

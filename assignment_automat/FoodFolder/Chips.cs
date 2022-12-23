@@ -7,6 +7,15 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.FoodFolder
 {
+
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Chips : Food, IMachine
     {
         public Chips(int number, string name, int cost, string description) : base(number, name, cost, description)
@@ -146,7 +155,7 @@ namespace assignment_automat.FoodFolder
             }
         }
 
-        public void MyChipsList()
+        public void MyChipsList()  //Lista för menyval
         {
             List<Chips> list = new List<Chips>();
             list.Add(new Chips(1, "Dill & gräslök", 20, "Grovräfflade chips"));
@@ -158,6 +167,8 @@ namespace assignment_automat.FoodFolder
             }
 
         }
+
+        //implementerar mina metoder i interfacet.
         public void Buy()
         {
             Console.WriteLine("Köper den Lilla chipspåsen");

@@ -8,6 +8,14 @@ using System.Threading.Tasks;
 
 namespace assignment_automat.SouvenirFolder
 {
+    /*
+     * Gör sammanfattning av kommentarerna, 
+     * Jag skapar nya objekt för mina olika produkter.
+     * Jag skriver ut dem olika produkterna med en foreachloop
+     * Användaren gör ett menyval och ges produktinformation.
+     * Gör en penga kontroll och har du pengar erbjuds du köpa produkten och använda den
+     * annars får du felmeddelande och efterfrågas att lägga in mer pengar.
+     */
     internal class Accessories : Souvenir, IMachine
     {
         public Accessories(int number, string name, int cost, string description) : base(number, name, cost, description)
@@ -147,7 +155,7 @@ namespace assignment_automat.SouvenirFolder
             }
         }
 
-        public static void MyAccessoriesList()
+        public static void MyAccessoriesList() //lista över produkter för menyval 
         {
             List<Accessories> list = new List<Accessories>();
             list.Add(new Accessories(1, "Hatt", 45, "Svensk Buckethat "));
@@ -159,6 +167,7 @@ namespace assignment_automat.SouvenirFolder
             }
 
         }
+        //implementerar mina olika metoder från interfacet
         public void Buy()
         {
             Console.WriteLine("Jasså ett nytt SVENSKT plagg");
